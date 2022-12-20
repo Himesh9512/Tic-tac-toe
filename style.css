@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fde047;
+    color: #0f172a;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: large;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    text-align: center;
+}
+
+/* MAIN */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-bottom: 40px;
+}
+
+.square {
+    border-bottom: 3px #0f172a solid;
+    border-right: 3px #0f172a solid;
+    width: 130px;
+    height: 130px;
+    background-color: #fef9c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    user-select: none;
+}
+
+.square:nth-child(3n) {
+    border-right: none;
+}
+
+.square:nth-child(n+7) {
+    border-bottom: none;
+}
+
+.square:hover {
+    cursor: pointer;
+    background-color: #facc15;
+}
+
+.restart {
+    background-color: #F14B6C;
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+.restart:hover {
+    background-color: hsl(348, 86%, 55%);
+    cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+    height: fit-content;
+    margin-top: auto;
+    text-align: center;
+}
+
+.footer img {
+    margin-left: 10px;
+    margin-bottom: -6px;
+    width: auto;
+    height: 25px;
+}
+
+.footer a {
+    color: #0f172a;
+}
