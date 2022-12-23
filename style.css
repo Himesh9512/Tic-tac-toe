@@ -1,14 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-
 html,
 body {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
-    background-color: #fde047;
+    background-color: #64748b;
     color: #0f172a;
-    font-family: 'Fjalla One', sans-serif;
     font-size: large;
 }
 
@@ -31,14 +28,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px;
 }
 
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 25px 1px rgba(0,0,0,0.1);
 }
 
 .square {
@@ -46,12 +43,13 @@ body {
     border-right: 3px #0f172a solid;
     width: 130px;
     height: 130px;
-    background-color: #fef9c3;
+    background-color: #e2e8f0;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 60px;
     user-select: none;
+    font-family: 'Concert One','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .square:nth-child(3n) {
@@ -64,11 +62,12 @@ body {
 
 .square:hover {
     cursor: pointer;
-    background-color: #facc15;
+    background-color: #334155;
+    color: #f8fafc;
 }
 
 .restart {
-    background-color: #F14B6C;
+    background-color: #f43f5e;
     border: none;
     border-radius: 15px;
     font-size: 1rem;
